@@ -13,7 +13,9 @@
   cursor: pointer;
   border: 0;
 }
-
+.text-light-gray {
+  color: #727272;
+}
 /* header styles */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -53,9 +55,7 @@ nav li a {
   font-weight: 700;
   color: #131313;
 }
-.banner-description {
-  color: #727272;
-}
+
 .banner img {
   margin-top: 20px;
   width: 100%;
@@ -63,7 +63,7 @@ nav li a {
 /* main section styles */
 main {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
 }
 /* Teams style */
 .teams-container {
@@ -83,7 +83,6 @@ main {
   font-size: 2.8rem;
 }
 .teams-title .quick-list {
-  color: #727272;
   font-weight: 500;
 }
 .teams-title .text-features {
@@ -97,13 +96,22 @@ main {
   header {
     padding: 20px;
   }
-  nav {
+  nav,
+  .teams-container {
     flex-direction: column;
+  }
+  .teams-img-container {
+    grid-template-columns: 1fr;
+  }
+  .teams-content {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 /* Tablet or Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-  nav {
+  nav,
+  .teams-container {
     flex-direction: column;
   }
   header {
